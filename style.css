@@ -1,0 +1,149 @@
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#apple-logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+
+input {
+    /* positioning */
+    margin: auto auto;
+
+    /* box model */
+    width: 90px;
+    height: 16px;
+
+    /* visual */
+    border-radius: 10px;
+}
+
+header {
+    /* positioning */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 120px;
+    z-index: 2;
+
+    /* box model */
+    border: 1px solid #000;
+    width: 980px;
+    height: 36px;
+
+    /* visual */
+    border-radius: 4px;
+
+    background: #696969;
+    background: linear-gradient(to top, #696969, #7d7d7d); 
+}
+
+header nav {
+    /* box model */
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header nav a {
+    /* box model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 103px;
+    border-right: 1px solid #000;
+
+}
+
+article {
+    /* positioning */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* box model */
+    width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(4, 360px);
+    grid-template-rows: 686px 200px;
+}
+
+article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+article #main-image-div {
+    /* box model */
+    grid-area: 1 / 1 / 2 / -1;
+    /* position: relative; */
+
+    /* visual */
+    background-image: url('images/your_verse_hero.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    z-index: 1;
+}
+
+article #main-image-div #title,
+article #main-image-div #subhead,
+article #main-image-div #verse {
+    /* positioning */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* box model */
+    width: 980px;
+
+    /* visual */
+    background-repeat: no-repeat;
+}
+
+
+article #main-image-div #title { 
+    /* positioning */
+    margin-top: 200px;
+
+    /* box model */
+    height: 104px;
+
+    /* visual */
+    background-image: url('images/your_verse_title_small.png');
+    background-position: 0 10px;
+}
+
+article #main-image-div #subhead {
+    /* box model */
+    height: 82px;
+
+    /* visual */
+    background-image: url('images/your_verse_subhead_small.png');
+
+}
+
+article #main-image-div #verse { 
+    /* box model */
+    height: 64px;
+
+    /* visual */
+    background-image: url('images/cta_your_verse_27pt.png');
+    background-position: 0 30px;
+}
+
+
+article img:nth-of-type(1) {    grid-area: 2 / 1 / 3 / 2;}
+article img:nth-of-type(2) {    grid-area: 2 / 2 / 3 / 3;}
+article img:nth-of-type(3) {    grid-area: 2 / 3 / 3 / 4;}
+article img:nth-of-type(4) {    grid-area: 2 / 4 / 3 / 5;}
+
+
+
+
+
+
+
