@@ -140,6 +140,37 @@ article img:nth-of-type(2) {    grid-area: 2 / 2 / 3 / 3;}
 article img:nth-of-type(3) {    grid-area: 2 / 3 / 3 / 4;}
 article img:nth-of-type(4) {    grid-area: 2 / 4 / 3 / 5;}
 
+footer strong {     color: #0088cc;}
+footer ul li {      color: #0088cc;}
+
+footer {
+    /* positioning */
+    margin: 20px auto;
+
+    /* box model */
+    width: 980px;
+    display: grid;
+    grid-template-areas: 
+        "first second"
+        "third auto";
+
+    /* typography */
+    font-size: 11px;
+    line-height: 21px;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    padding-right: 5px;
+    padding-left: 5px;
+    border-right: 1px solid #e8e8e8;
+}
+
+
+
 
 
 
